@@ -1,0 +1,15 @@
+#raiz{
+    text-align: center;
+
+}
+input{
+    border-radius: 15px;
+    font-size: 15px;
+    width: 80px;
+    text-align: center;
+}
+button{
+    border-radius: 15px;
+    width: 180px;
+    font-size: large
+}
