@@ -1,53 +1,56 @@
-function exemploWhile(){
-     let num = Number(document.getElementById("entrada").value);
-     let i = 0;
-     while(i < num){
+
+function questao1(){
+    let i = 10;
+    while(i > 0){
         alert(i);
-        i ++;
-     }    
-}
-
-function exemploFor(){
-     let num = Number(document.getElementById("entrada").value)
-     for(let i = 0; i < num; i ++){
-        alert(i);       
-     }
-}
-
-function primos(){
-     let num = Number(document.getElementById("entrada").value);
-     let qtd = 0
-     let i = 1
-     while(i <= num ){
-        let divisores = 0;
-        let c = 1;
-        while(c <= i){
-            if(i % c == 0){
-                divisores ++;
-            }
-            c++
-        }
-        if (divisores == 2){
-            qtd ++;
-        }
-        i++;
-     }
-     alert(qtd);
-}
-
-function teste(){
-    let num = Number(document.getElementById("entrada").value);
-    qtd = 0 
-    for(let i = 1; i <= num; i++){
-        let divisores = 0;
-        for (let c = 1; c <= i; c++){
-            if(i % c == 0){
-                divisores ++;
-            }
-        }
-        if(divisores == 2){
-            qtd ++;
-        }
+        i = i - 1;
     }
-    alert(qtd);
+    if(i = 1){
+        alert("Feliz ano novo!")
+    }
+
+}
+
+function questao2(){
+    let num = (document.getElementById("numero").value)
+    let qtd = 1
+    let primeiroNum = num
+    for (let i = 10; qtd <= i; qtd++ ){
+        num = primeiroNum * qtd
+        alert(num)
+    }
+
+}
+
+function questao3(){
+    let par = 0
+    let contador = 0
+    let adicao = 0
+    while(contador <= 50){
+        if (par % 2 == 0){
+            adicao = par + adicao
+            par++
+        }
+        else{
+            par++
+        }
+        contador++
+    }
+    alert(adicao)
+    
+}
+
+function questao4(){
+    let hihi = Number(getElementById("primo").value)
+    let divisores = 0;
+    for(let i = 2; i <= hihi; i++){
+        if(num % i == 0){
+        divisores++
+        }
+        break;
+    }
+        if(divisores == 2){
+    }
+    alert("é primo") 
+
 }
