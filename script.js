@@ -41,16 +41,36 @@ function questao3(){
 }
 
 function questao4(){
-    let hihi = Number(getElementById("primo").value)
+    let hihi = Number(document.getElementById("primo").value);
     let divisores = 0;
-    for(let i = 2; i <= hihi; i++){
-        if(num % i == 0){
+
+    for(let i = 2; i < hihi; i++){
+        if(hihi % i == 0){
         divisores++
-        }
         break;
+        }
     }
-        if(divisores == 2){
+        if(divisores != 0 || hihi <=1){
+            alert("Esse número não é primo!!!!")
+    } else{
+       alert("Este número é primo.")
     }
-    alert("é primo") 
+}
+
+function questao5(){
+    let num = Number(document.getElementById("fibbs").value)
+    let cont = 2
+    let seqAtual = 1
+    let seqAnterior = 0
+    let seqProx = 0
+
+    while(cont < num){
+        seqProx = seqAtual + seqAnterior
+        seqAnterior = seqAtual
+        seqAtual = seqProx
+
+        cont++
+    }
+    alert(seqProx)
 
 }
