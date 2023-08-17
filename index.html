@@ -2,20 +2,32 @@
 <html lang="en">
 <head>
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aulas</title>
 </head>
 <body>
-    <h1>Exercício de Fixação</h1>
-   <li> <button onclick="questao1()">Questão 1</button>   <div id="saida1"></div> </li><br> 
-   <li> <button onclick="questao2()">Questão 2</button>   <input  id="numero" placeholder="Tabuada"type="number">
-    <div id="saida2"></div> </li><br>
-   <li> <button onclick="questao3()">Questão 3</button>   <div id="saida3"></div> </li><br>
-   <li> <button onclick="questao4()">Questão 4</button>  <input id="primo" type="number"> </li><br>
-   <li> <button onclick="questao5()">Questão 5</button>   <input id="fibbs" type="number"div></li><br>
+    <h1 style="text-align: center;">Exercício de Fixação</h1>
+    <div class="perguntas">
+    <button onclick="questao1()">Questão 1</button>   <div id="saida1"></div> <br> 
+    <button onclick="questao2()">Questão 2</button>   <input  id="numero" placeholder="Tabuada"type="number">
+    <div id="saida2"></div> <br>
+    <button onclick="questao3()">Questão 3</button>   <div id="saida3"></div> <br>
+    <button onclick="questao4()">Questão 4</button>  <input id="primo" type="number"> <br> <br>
+    <button onclick="questao5()">Questão 5</button>   <input id="fibbs" type="number"div><br>
+    <button id="meuBotao">Clique em mim</button>
 
-
+    <script>
+      document.getElementById('meuBotao').addEventListener('click', function() {
+        Swal.fire('Olá, SweetAlert!');
+      });
+    </script>
+        
+ </script>
+</div>
 </body>
 </html>
